@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 echo "Starting build process..."
-make
-make install
-cd ..
+sudo make
+sudo make install
 echo "Build completed successfully"
