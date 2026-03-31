@@ -14,7 +14,7 @@ if [ -s output.txt ]; then
 	exit 1
 fi
 
-cho "" | ./programm > output.txt
+echo "" | ./programm > output.txt
 if [ -s output.txt ]; then
 	echo "Test 3 failed"
 	exit 1
