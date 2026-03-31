@@ -1,11 +1,8 @@
-#!/usr/bin/env bash
-set -euo pipefail
- 
-make clean
+#!/bin/bash
+set -e
+echo "Starting build process..."
+cd src
 make
- 
-mkdir -p out
-cp ./reverse ./out/reverse
-chmod +x ./out/reverse
- 
-echo "Build completed: ./out/reverse"
+make install
+cd ..
+echo "Build completed successfully"
