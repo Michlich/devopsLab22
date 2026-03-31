@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: deb-package
-          path: *.deb
+          path: programm_1,0_all.deb
   release:
     runs-on: ubuntu-latest
     needs: package
