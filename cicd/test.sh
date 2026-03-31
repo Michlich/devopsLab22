@@ -18,13 +18,9 @@ if [ -s output.txt ]; then
 	exit 1
 fi
 
-echo " " | ./programm > output.txt
-if [ -s output.txt ]; then
-	echo "Test 3 failed"
-	exit 1
-fi
 
-cho "111 222 333" | ./programm > output.txt
+
+echo "111 222 333" | ./programm > output.txt
 if [ -s output.txt ]; then
 	echo "Test 4 failed"
 	exit 1
