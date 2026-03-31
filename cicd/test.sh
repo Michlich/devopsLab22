@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+echo "Starting build process..."
+sudo make
+sudo make install
+echo "Build completed successfully"
 echo "1 22 4444" | ./programm > output.txt
 expected="4444"
 if ! grep -q "$expected" output.txt; then
