@@ -53,10 +53,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Download package artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: deb-package
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
