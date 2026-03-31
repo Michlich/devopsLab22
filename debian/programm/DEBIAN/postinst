@@ -3,7 +3,7 @@ set -e
 
 case "$1" in
 	configure)
-		cd /home/vboxuser/devopsLab1/programm
+		cd /home/vboxuser/devopsLab2
 		make || exit 1
 		;;
 	abort-upgrade|abort-remove|abort-deconfigurate)
